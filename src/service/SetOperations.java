@@ -17,7 +17,7 @@ public class SetOperations
 	public HashSet add(TouristPlace places)
 	{
 		touristPlaceSet.add(places);
-		lastAdded.add(places);
+		lastAdded.push(places);
 		return touristPlaceSet;
 	}
 	
@@ -25,7 +25,6 @@ public class SetOperations
 	public HashSet remove()
 	{
 		if(lastAdded.size()!=0)touristPlaceSet.remove(lastAdded.pop());
-		System.out.println("removed"+touristPlaceSet.toString()+lastAdded.pop());
 		return touristPlaceSet;
 	}
 	
@@ -50,7 +49,7 @@ public class SetOperations
 	public Set reset()
 	{
 		touristPlaceSet.clear();
-		lastAdded=null;
+		lastAdded.clear();
 		return touristPlaceSet;
 	}
 }
