@@ -36,7 +36,7 @@
 				<input id="sort-alphabet"	type="checkbox" value="sort in entry order" name="sortalphabetically">
 				
 				<button class="button-reset" type="submit" value="reset" name="reset">RESET MY BUCKET LIST</button>
-				<button class="button-delete" type="submit" value="delete" name="remove">DELETE MY LAST ENTRY</button>
+				<button class="button-delete" type="submit" value="remove" name="remove">DELETE MY LAST ENTRY</button>
 			</div>
 		</div>
 	</form>
@@ -57,7 +57,7 @@
 
 					<tr>
 
-						<td><c:out value="${bucket.getKey()}" /></td>
+						<td><c:out value="${bucket.getValue().getName()}" /></td>
 						<td><c:out value="${bucket.getValue().getDestination()}" /></td>
 						<td><c:out value="${bucket.getValue().getRank()}" /></td>
 

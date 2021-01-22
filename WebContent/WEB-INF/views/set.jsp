@@ -27,7 +27,7 @@
 				<label id="sort-rank-id" for="sortbyrank">Sort by Rank </label>
 				<input id="sortbyrank" type="checkbox" value="Sort by rank" name="sortbyrank">
 				<button class="button-reset" type="submit" value="reset" name="reset">RESET MY BUCKET LIST</button>
-				<button class="button-delete" type="submit" value="delete" name="remove">DELETE MY LAST ENTRY</button> 
+				<button class="button-delete" type="submit" value="remove" name="remove">DELETE MY LAST ENTRY</button> 
 			</div>
 		</div>
 	</form>

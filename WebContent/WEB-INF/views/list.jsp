@@ -1,4 +1,3 @@
-
 <%@page import="model.TouristPlace"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
@@ -24,12 +23,15 @@
 				<label id="rank-id" for="rank">Rank</label> 
 				<input type="text" class="form-text" id="rank" placeholder="Rank" name="rank">
 			   	<button class="button" type="submit" value="ADDITEM" name="add">ADD TO BUCKET LIST</button> 
+			   	
 				<label id="sort-id" for="sort">Sort by Destination </label>
 				<input id="sort" type="checkbox" value="sort by destination" name="sortbydestination">
+				
 				<label id="sort-rank-id" for="sortbyrank">Sort by Rank </label>
 				<input id="sortbyrank" type="checkbox" value="Sort by rank" name="sortbyrank">
+				
 				<button class="button-reset" type="submit" value="reset" name="reset">RESET MY BUCKET LIST</button>
-				<button class="button-delete" type="submit" value="delete" name="remove">DELETE MY LAST ENTRY</button> 
+				<button class="button-delete" type="submit" value="remove" name="remove">DELETE MY LAST ENTRY</button> 
 			</div>
 		</div>
 	</form>
