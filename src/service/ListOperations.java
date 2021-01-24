@@ -29,16 +29,18 @@ public class ListOperations
 	//Sorting the list based on destination
 	public List sortByDestination()
 	{
-		Collections.sort(touristPlaceList ,(TouristPlace place1,TouristPlace place2)-> (place1.getDestination().toUpperCase()).compareTo(place2.getDestination().toUpperCase()));
-		return touristPlaceList;
+		List<TouristPlace>sortedList=new ArrayList<>(touristPlaceList);
+		Collections.sort(sortedList ,(TouristPlace place1,TouristPlace place2)-> (place1.getDestination().toUpperCase()).compareTo(place2.getDestination().toUpperCase()));
+		return sortedList;
 	}
 	
 	
 	//Sorting the ist based on rank 
 	public List sortByRank()
 	{
-		Collections.sort(touristPlaceList ,(TouristPlace place1,TouristPlace place2) -> (place1.getRank()).compareTo(place2.getRank()));
-		return touristPlaceList;
+		List<TouristPlace>sortedList=new ArrayList<>(touristPlaceList);
+		Collections.sort(sortedList ,(TouristPlace place1,TouristPlace place2) -> (place1.getRank()).compareTo(place2.getRank()));
+		return sortedList;
 	}
 	
 	//resetting the list
